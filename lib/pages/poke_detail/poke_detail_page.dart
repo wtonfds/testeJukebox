@@ -165,7 +165,7 @@ class _PokeDetailPageState extends State<PokeDetailPage> {
                     _pokeApiV2Store.getInfoPokemon(_pokemonStore.pokemonAtual.name);
                     _pokeApiV2Store.getInfoSpecie(_pokemonStore.pokemonAtual.id.toString());
                   },
-                  itemCount: 9,
+                  itemCount: 151,
                   itemBuilder: (BuildContext context, int index) {
                     Pokemon _pokeitem = _pokemonStore.getPokemon(index: index);
                     return Stack(

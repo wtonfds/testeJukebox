@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
                                       new SliverGridDelegateWithFixedCrossAxisCount(
                                           crossAxisCount: 2),
                                   itemCount:
-                                      9,
+                                      151,
                                   itemBuilder: (context, index) {
                                     Pokemon pokemon =
                                         _pokemonStore.getPokemon(index: index);

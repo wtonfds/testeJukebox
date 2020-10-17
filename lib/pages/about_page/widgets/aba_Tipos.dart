@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
-import 'package:pokedex_youtube/components/circular_progress_about.dart';
-import 'package:pokedex_youtube/models/specie.dart';
 import 'package:pokedex_youtube/stores/pokeapi_store.dart';
 
 
 
-class AbaHabilidade extends StatelessWidget {
+class AbaTipo extends StatelessWidget {
   final PokeApiStore _pokeApiStore = GetIt.instance<PokeApiStore>();
 
 

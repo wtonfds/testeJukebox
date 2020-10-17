@@ -4,6 +4,7 @@ import 'package:get_it/get_it.dart';
 import 'package:md2_tab_indicator/md2_tab_indicator.dart';
 import 'package:mobx/mobx.dart';
 import 'package:pokedex_youtube/pages/about_page/widgets/aba_Tipos.dart';
+import 'package:pokedex_youtube/pages/about_page/widgets/aba_habilidade.dart';
 import 'package:pokedex_youtube/pages/about_page/widgets/aba_sobre.dart';
 import 'package:pokedex_youtube/stores/pokeapi_store.dart';
 
@@ -75,10 +76,10 @@ class _AboutPageState extends State<AboutPage>
                   text: "Sobre",
                 ),
                 Tab(
-                  text: "Tipo",
+                  text: "Tipos",
                 ),
                 Tab(
-                  text: "",
+                  text: "Habilidades",
                 )
               ],
             );
@@ -93,7 +94,8 @@ class _AboutPageState extends State<AboutPage>
         controller: _pageController,
         children: <Widget>[
           AbaSobre(),
-          AbaHabilidade(),
+          AbaTipo(),
+          AbaHabilidade()
         ],
       ),
     );
